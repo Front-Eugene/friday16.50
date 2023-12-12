@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новый год</title>
+</head>
+
+<style>
+    body {
+        transition: all 1s ease-out;
+        background: url(bg-day.jpg);
+        background: url(bg-night.jpg);
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#s1"><button>Таймер</button></a>
+                </li>
+
+                <li>
+                    <a href="#s2"><button>Новогодние традиции</button></a>
+                </li>
+
+                <li>
+                    <a href="#s3"><button>Подарки</button></a>
+                </li>
+
+                <li>
+                    <a href="#s4"><button>Украшение дома</button></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="s1">
+            <div class="timer-wrap timer_1">
+                <div class="timer__block">
+                    <span class="days">12</span>
+                    <p class="timer-text">дней</p>
+                </div>
+                <div class="timer__block">
+                    <span class="hours">3</span>
+                    <p class="timer-text">часов</p>
+                </div>
+                <div class="timer__block">
+                    <span class="minutes">23</span>
+                    <p class="timer-text">минут</p>
+                </div>
+                <div class="timer__block">
+                    <span class="seconds">3</span>
+                    <p class="timer-text">секунд</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="s2">
+            <h2>Новогодние традиции</h2>
+            <h3>Какие они бывают</h3>
+            <div class="item-wrap">
+                <div class="img-wrap" style="width: 320px; flex-direction: column;">
+                    <img style="width: 100%;" src="https://fabrika-podarkov.by/sites/default/files/pages/16181169_16181169.jpg" alt="" class="img-item">
+                    <img style="width: 100%;" src="data:image/jpeg;base64,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" alt="" class="img-item">
+                </div>
+                <p class="gift-text" style="width: 600px;">
+                 В каждой стране свои новогодние традиции, однако есть несколько праздничных обычаев, которые соблюдают люди во всем мире.
+
+                Что принято делать на Новый Год?
+
+                Собираться всей семьей.
+                Большинство людей стремятся встретить праздник в теплой, уютной, домашней атмосфере. Поднять бокалы пенящегося шампанского, загадать желание в кругу родных и друзей, посидеть за праздничным столом, ­­­­­– именно эти вещи ценятся во всех странах мира!
+
+                Украшать дом.
+                Создавать праздничную атмосферу в доме принято с древних времен. Чем только не украшали свое жилище наши предки! В основном, это было что-то съедобное: яблоки, орехи, картофель и даже яйца. Значительно позже появились стеклянные шары, гирлянды и прочие знакомые нам элементы декора. Сегодня выбор новогодних украшений настолько велик, что подобрать именно то, что сделает ваш дом неповторимым и сказочным, не составит труда.
+
+                Дарить подарки.
+                Ни один Новый Год не обходится без подарков. Так было и раньше, люди поздравляли друг друга с завершением старого года и началом чего-то совершенно прекрасного.
+
+                Традиция дарить подарки, безусловно, является одной из самых приятных!
+                </p>
+                <div class="img-wrap" style="width: 320px; flex-direction: column;">
+                    <img style="width: 100%;" src="https://img.craiyon.com/2023-12-08/dZiqCXwARm6dgd0ah4nXRg.webp" alt="" class="img-item">
+                    <img style="width: 100%;" src="https://www.kino-teatr.ru/movie/kadr/164619/pv_1470939.jpg" alt="" class="img-item">
+                </div>
+            </div>
+        </section>
+
+        <section id="s3">
+            <h2>Новогодние подарки</h2>
+            <h3>Как подобрать подарок</h3>
+            <div class="item-wrap">
+                <div class="img-wrap">
+                    <img src="https://pics.craiyon.com/2023-10-04/9829facc7c6445faa7202b59de540ce5.webp" alt="" class="img-item">
+                    <img src="https://img.craiyon.com/2023-12-08/enk43eV_Sb-6UomNVZ6GXw.webp" alt="" class="img-item">
+                    <img src="https://img.craiyon.com/2023-12-08/enk43eV_Sb-6UomNVZ6GXw.webp" alt="" class="img-item">
+                    <img src="https://pics.craiyon.com/2023-10-04/9829facc7c6445faa7202b59de540ce5.webp" alt="" class="img-item">
+                </div>
+                <p class="gift-text">
+                 Вот уже близятся новогодние праздники и перед вами стоит задача, найти хороший, качественный и недорогой подарок (детям, коллегам или просто своим близким). С чего же стоит начать? Конечно нужно определиться с необходимым количеством подарков, для кого необходимы подарки, состав, а также и сумма которой Вы располагаете. 
+На данный момент рынок данной сферы услуг пестрит огромным количеством предложений с новогодними подарками. Огромный ассортимент различных производителей конфет и кондитерских изделий от различных ведущих производителей России, Украины и Беларуси. Подарки на любой вкус и цвет: различный вес, состав, упаковка и конечно цена. Но что скрывается за яркой и красочной упаковкой? Стоит обратит внимание на состав новогоднего набора, часто среди малоизвестных конфет скрываются дешевые и невкусные изделия, кроме того в составе имеются и вафли, печенье, леденцы и прочие НЕ ШОКОЛАДНЫЕ кондитерские изделия. Все этого удешевляет подарок за счет потери его качества. Не тратьте свое время и деньги зря, ведь испорченный праздник не стоит этого, не так ли?
+                </p>
+            </div>
+            <iframe width="100%" height="515" src="https://www.youtube.com/embed/GsPMIhkcbfc?si=mohQCW-ehLplN5xa"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen loop controls=0>
+            </iframe>
+        </section>
+
+        <section id="s4">
+            <div class="img-group">
+                <div class="img-podgroup">
+                    <img src="https://img.craiyon.com/2023-12-08/_c2Vb-KtQLWbeO599Ed6VA.webp" alt="" class="img-gallery">
+                    <img src="https://img.craiyon.com/2023-12-08/3AEzxq3FTLWNghpqJ8igfQ.webp" alt="" class="img-gallery">
+                    <img src="" alt="" class="img-gallery">
+                </div>
+                <img src="https://img.craiyon.com/2023-12-08/mF2NyH7MSOuGXLpXh5eFkA.webp" alt="" class="img-single">
+            </div>
+            <p>
+                    !!!!!!!!чтобы красиво украсить дом надо:
+
+                Свечи
+
+                Мандарины
+
+                Пряничный домик
+
+                Новогодние пожелания
+
+                Елочные шарики
+
+                Ветки деревьев
+
+                Вязаные снежинки
+
+                Гирлянды и мишура
+            </p>
+
+            <div class="img-group">
+                <img src="https://pics.craiyon.com/2023-10-30/b4b030c4ab07475e9e19424e8f42ea5b.webp" alt="" class="img-single">
+                <div class="img-podgroup">
+                    <img src="https://img.craiyon.com/2023-12-08/y-f6ezo5Q_a8MSDd6VeEeA.webp" alt="" class="img-gallery">
+                    <img src="https://pics.craiyon.com/2023-09-29/810b6363ccd54fb5ad8236c9cc795db5.webp" alt="" class="img-gallery">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h3>сделал Ярошик Саша</h3>
+    </footer>
+    <script src="timer.js"></script>
+</body>
+
+</html>
+
